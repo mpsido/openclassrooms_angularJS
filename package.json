@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mpsido/openclassrooms_angularJS/issues"
   },
-  "homepage": "https://github.com/mpsido/openclassrooms_angularJS#readme"
+  "homepage": "https://github.com/mpsido/openclassrooms_angularJS#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }
