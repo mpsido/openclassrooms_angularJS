@@ -1,6 +1,12 @@
-<h3>
+<li class="list-group-item">
+<div>
+<h3 [ngStyle]="{color: getColor()}">
 {{ post_title }}
 </h3>
 <p>
   {{ content }}
 </p>
+<button class="btn btn-success" (click)="Like()">Like</button>
+<button class="btn btn-fail" (click)="Dislike()">Dislike</button>
+</div>
+</li>

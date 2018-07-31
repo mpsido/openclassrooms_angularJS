@@ -9,10 +9,31 @@ export class PostListComponentItemComponent implements OnInit {
 
   @Input() post_title: string;
   @Input() content: string;
+  countLike: number = 0;
+  countDislike: number = 0;
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  Like() {
+    this.countLike++;
+  }
+
+
+  Dislike() {
+    this.countDislike++;
+  }
+
+  getColor() {
+    if(this.countLike > this.countDislike) {
+      return 'green';
+    } else if(this.countLike < this.countDislike) {
+      return 'red';
+    } else {
+      return 'black';
+    }
+}
 
 }
