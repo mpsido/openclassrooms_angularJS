@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mpsido/openclassrooms_angularJS#readme",
   "dependencies": {
+    "@angular/cli": "^6.1.1",
     "bootstrap": "^3.3.7"
   }
 }
