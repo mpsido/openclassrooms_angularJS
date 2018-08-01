@@ -11,6 +11,7 @@ export class PostListComponentItemComponent implements OnInit {
   @Input() content: string;
   countLike: number = 0;
   countDislike: number = 0;
+  postDate = new Date();
 
   constructor() { }
 
@@ -34,6 +35,16 @@ export class PostListComponentItemComponent implements OnInit {
     } else {
       return 'black';
     }
-}
+  }
+
+  getClass() {
+    if(this.countLike > this.countDislike) {
+      return 'list-group-item-success';
+    } else if(this.countLike < this.countDislike) {
+      return 'list-group-item-danger';
+    } else {
+      return '';
+    }
+  }
 
 }

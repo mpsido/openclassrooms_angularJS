@@ -1,8 +1,9 @@
-<li class="list-group-item">
-<div>
+<li>
+<div [ngClass]="getClass()">
 <h3 [ngStyle]="{color: getColor()}">
 {{ post_title }}
 </h3>
+<p>Mis à jour : {{ postDate | date: 'short' }}</p>
 <p>
   {{ content }}
 </p>
